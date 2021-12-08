@@ -27,6 +27,25 @@ Both Robots should be derived from a base Robot class (parent class `APawn`) tha
 - The Instructions are intended to be leveraged by someone else on the team who cannot modify their logic (perhaps a level designer with limited Blueprint knowledge). Because of this, Instructions should have a reasonable about of parameters or inputs exposed. For example, an Instruction that instructs the Robot to move forward in a direction should probably have a "distance" parameter that can be set.
 - You are encouraged to create as many additional Instruction types as you think would be useful for this scenario. Instructions should create, call and/or reference other Instructions where it makes sense to do so.
 
+## Robot Metrics
+
+- Have a system that tracks the following:
+	-Per-robot move distance
+	-Per-dropper-robot dropped sphere count.
+	-Per-grabber-robot destroyed sphere count.
+	-Per-grabber-robot destroyed spheres per minute.
+	-Average dropper move distance.
+	-Average grabber move distance.
+	-Total dropped spheres.
+	-Total grabbed spheres.
+	
+-A run of the program is considered a session and should have its own metrics tracked.
+	-So when the program starts, all stats for the session should be at 0.
+	
+-A running total of all metrics across all sessions should be kept.
+
+-Metrics should be viewable either through UI or text file (console commands are acceptable).
+
 ## The Project
 We have provided the following content for this task:
 - `Content/AIReverie/Robot_TestMap` : The level used for evaluating. This is the only part of the project that should not be modified in any way.
