@@ -30,21 +30,21 @@ Both Robots should be derived from a base Robot class (parent class `APawn`) tha
 ## Robot Metrics
 
 - Have a system that tracks the following:
-	-Per-robot move distance
-	-Per-dropper-robot dropped sphere count.
-	-Per-grabber-robot destroyed sphere count.
-	-Per-grabber-robot destroyed spheres per minute.
-	-Average dropper move distance.
-	-Average grabber move distance.
-	-Total dropped spheres.
-	-Total grabbed spheres.
+	- Per-robot move distance
+	- Per-dropper-robot dropped sphere count.
+	- Per-grabber-robot destroyed sphere count.
+	- Per-grabber-robot destroyed spheres per minute.
+	- Average dropper move distance.
+	- Average grabber move distance.
+	- Total dropped spheres.
+	- Total grabbed spheres.
 	
--A run of the program is considered a session and should have its own metrics tracked.
-	-So when the program starts, all stats for the session should be at 0.
+- A run of the program is considered a session and should have its own metrics tracked.
+	- So when the program starts, all stats for the session should be at 0.
 	
--A running total of all metrics across all sessions should be kept.
+- A running total of all metrics across all sessions should be kept.
 
--Metrics should be viewable either through UI or text file (console commands are acceptable).
+- Metrics should be viewable either through UI or text file (console commands are acceptable).
 
 ## The Project
 We have provided the following content for this task:
